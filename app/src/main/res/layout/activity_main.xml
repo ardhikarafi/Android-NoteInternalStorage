@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletext"
+
+        android:text="Enter The Text"
+        />
+    <EditText
+        android:id="@+id/editNotes"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_below="@+id/titletext"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Masukan Textmu Disini"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNotes"
+        android:layout_centerHorizontal="true"
+        android:text="Save The Notes"
+        android:onClick="saveclicked"/>
+    <Button
+        android:id="@+id/btnread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-3dp"
+        android:text="Read Notes"
+        android:onClick="read"/>
+    <Button
+        android:id="@+id/btntosd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnread"
+        android:layout_centerHorizontal="true"
+        android:text="Save The Notes to SD"
+        android:onClick="savetosd"
+        />
+</RelativeLayout>
